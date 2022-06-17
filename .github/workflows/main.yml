@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         # list compatible with arm64; exclude the latest version set for use with "include" below
-        postgres: [14]
+        postgres: [13]
         postgis: ['3.2']
         latest: [false]
     name: Build docker image for ${{ matrix.postgres }}-${{ matrix.postgis }}
